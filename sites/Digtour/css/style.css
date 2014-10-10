@@ -1,0 +1,803 @@
+/*------снипеты-----*/
+.column	{
+	float: left;
+}
+
+.pull-left {
+	float: left;
+}
+
+.pull-right {
+	float: right;
+}
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+.wrapper {
+	width: 100%;
+}
+
+.container {
+	margin: 0 auto;
+	height: 100%;
+	width: 1135px;
+	overflow: hidden;
+	font-family: 'PT Sans';
+}
+/*-------*/
+
+
+/*-----------Изменение пути к папке со спрайтом (фенсибокс)-----------*/
+
+ #fancybox-loading,.fancybox-overlay  .fancybox-close, .fancybox-overlay .fancybox-prev span, .fancybox-overlay  .fancybox-next span {
+	background-image: url(../images/vendor/fancyBox/fancybox_sprite.png);
+}
+
+ #fancybox-loading div {
+	background: url(../images/vendor/fancyBox/fancybox_loading.gif) center center no-repeat;
+}
+
+ .fancybox-nav {
+	background: transparent url(../images/vendor/fancyBox/blank.gif); /* helps IE */
+}
+
+.fancybox-overlay {
+	background: url(../images/vendor/fancyBox/fancybox_overlay.png);
+}
+
+/*Retina graphics!*/
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+	   only screen and (min--moz-device-pixel-ratio: 1.5),
+	   only screen and (min-device-pixel-ratio: 1.5){
+
+	#fancybox-loading, .fancybox-close, .fancybox-prev span, .fancybox-next span {
+		background-image: url(../images/vendor/fancyBox/fancybox_sprite@2x.png);
+	}
+
+	.fancybox-loading div {
+		background-image: url(../images/vendor/fancyBox/fancybox_loading@2x.gif);
+	}
+}
+/*----------/изменение пути к папке со спрайтом (фенсибокс)-----------*/
+
+
+
+
+
+/*******************************************************************
+LAYOUT
+*******************************************************************/
+
+
+/*=========Шапка==========*/
+
+header {
+	text-align: right;	
+	padding: 16px 0;
+}
+
+.grey {
+	background-color: #595959;
+	color: #000;
+}
+
+header .logo, 
+header nav,
+header .phone {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.up {
+	position: fixed;
+	right: 2%;
+	bottom: 22px;
+	z-index: 10;
+}
+
+/*------логотип------*/
+
+.logo {
+	float: left;
+}
+
+.logo img,
+.logo span {
+	vertical-align: middle;
+}
+
+.logo {
+	color: #fff;
+	text-decoration: none;
+	font-size: 36px;
+	font-style: normal;
+	font-family: 'PT Sans Caption';
+}
+
+.logo span:last-child {
+	color: #0f1521;
+}
+/*------/логотип------*/
+/*------главное меню------*/
+header nav {
+	font-size: 0;
+}
+
+header ul li {
+	display: inline-block;
+	margin: 14px 16px 0 0;
+}
+
+header nav li a {
+	text-decoration: none;
+	color: #000;
+	font-size: 22px;
+	padding: 10px; /*для того чтобы пальцы-сосиски попадали*/
+	font-weight: bold;
+	-webkit-transition: all 0.3s ease;;
+	-o-transition: all 0.3s ease;;
+	transition: all 0.3s ease;;
+}
+
+header nav li a:hover {
+	color: #fff;
+}
+/*------/главное меню------*/
+
+/*------телефоны------*/
+.phone {
+	margin-top: 14px;
+	text-align: left;
+	font-size: 5;
+}
+
+.phone span {
+	display: block;
+}
+
+.phone span:first-child { 
+	color: #feb000;
+	font-size: 18px;
+	font-weight: bold;
+} 
+
+.phone span:last-child { 
+	font-size: 14px;
+	font-weight: 100;
+} 
+/*------/телефоны------*/
+/*======/ШАПКА======*/
+
+/*=========Оградительная лента=========*/
+.tape {
+	width: 100%;
+	height: 23px;
+	background-image: linear-gradient(135deg, #FEB000 33%,#22211d 34%,#22211d 68%,#FEB000 46% );
+	-webkit-background-size: 40px 20px;
+	background-size: 48px 23px;
+}
+
+/*======ЧТО ЭТО?======*/
+.tunnel	{
+	height: 500px;
+	min-height: 500px;
+	position: relative;
+	padding: 54px 0;
+	text-align: center;
+	background: url(../images/bg_first.jpg) no-repeat top center;
+	-webkit-background-size: cover;
+	background-color: #000;
+}
+
+.tunnel h1 {
+	color: #feb000;
+	font-size: 72px;
+	width: 74%;
+	margin: 0 auto;
+	margin-bottom: 57px;
+	line-height: 61px;
+}
+
+.tunnel h1 span {
+	font-size: 60px;
+}
+
+/*--------серый блок--------*/
+.overlay {
+	color: #d9cfcf;
+	background: #707070;
+	background: rgba(112,112,112,0.92);
+	max-width: 49%;
+	margin: 0 auto; 
+	font-size: 24px;
+	padding: 10px 33px;
+	line-height: 32px;
+}
+
+.overlay .lead { 
+	font-size: 30px;
+	font-weight: bold;
+} 
+/*--------/серый блок--------*/
+
+
+.button {
+	/*display: inline-block;*/
+	color: #000;
+	padding: 5px 36px;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 24px;
+	display: inline-block;
+	margin-top: 27px;
+	-webkit-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+.button-yellow {
+	background: #feb000;
+	-webkit-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+.button:hover,
+.button-yellow:hover,
+.engrossing .button:hover,
+.social-icon span:hover {
+	background: #000;
+	color: #fff;
+}
+/*======/ЧТО ЭТО?======*/
+
+
+
+/*======ОПИСАНИЕ======*/
+
+.dark { 
+	background: #000;
+	font-size: 24px;
+	padding: 81px 0 99px;
+	color: #fff;
+} 
+
+.fat {
+	margin: 0 -5%; /*делаем строчку шире*/
+} 
+
+/*------колоночки-------*/
+.fifth { 
+	margin: 0px 2%;
+	width: 16%;
+	font-weight: bold;
+	color: #feb000;
+	text-align: center;
+} 
+
+.fifth img {
+	margin-bottom: 23px;
+}
+
+.fifth p {
+	font-size: 24px;
+	text-align: center; 
+}
+
+.fifth p:last-child {
+	margin-top: -11px;
+}
+/*------/колоночки-------*/
+
+/*--------основной текст описания-------*/
+.pref-content {
+	margin-top: 95px;
+	line-height: 8px;
+}
+
+.pref-content span {
+	color: #feb000;
+	font-weight: bold;
+}
+
+.three-fifth {
+	width: 59%;
+} 
+
+.pref-content .three-fifth p {
+	font-size: 18px;
+	font-style: normal;
+	margin-bottom: 15px;
+	line-height: 24px;
+}
+
+
+.two-fifth { 
+	width: 30%;
+	margin-left: 7%;
+} 
+
+.pref-content .two-fifth h2 {
+	font-weight: bold;
+	font-size: 30px;
+	line-height: 32px;
+	position: relative;
+	z-index: 2;
+}
+
+.pref-content .two-fifth img {
+	margin-bottom: 35px;
+	margin-top: -4px;
+}
+
+.pref-content .two-fifth h3 {
+	color: #feb000;
+	font-size: 24px;
+	margin-bottom: 21px;
+	font-weight: 100;
+}
+
+.pref-content .two-fifth p {
+	font-size: 18px;
+	line-height: 18px;
+}
+/*--------/основной текст описания-------*/
+/*======/ОПИСАНИЕ======*/
+
+
+
+
+/*========УВЛЕКАТЕЛЬНОЕ МЕТРО=========*/
+.bright { 
+	background: #f1f2f6;
+	color: #414140;
+} 
+
+.engrossing {
+	padding: 75px 0;
+}
+
+.engrossing .two-fifth { 
+	width: 38%;
+	margin-left: 0;
+} 
+
+.engrossing .two-fifth iframe {
+	width: 100%;
+	height: 275px;
+}
+
+.engrossing .three-fifth {
+	margin-left: 1%;
+}
+
+.engrossing h2 {
+	color: #2f2d2d;
+	font-weight: 100;
+	font-family: 'PT Sans Caption';
+	margin-bottom: 17px;
+}
+
+.engrossing h2 span {
+	color: #feb000;
+	font-weight: bold;
+}
+
+.engrossing p {
+	font-size: 17.4px;
+	line-height: 26px;
+	margin-bottom: 10;
+}
+
+.engrossing .button {
+	font-weight: 100;
+	padding: 6px 62px;
+	color: #414140;
+	-webkit-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+/*----------КАРУСЕЛЬ С ФОТО----------*/
+.foto {
+	padding: 18px 0 91px;
+}
+
+.foto-title {
+	color: #feb000;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 36px;
+	font-weight: bold;
+	font-family: 'PT Sans';
+	margin-bottom: 35px;
+}
+
+/*-----нейтрализация плагина бхслайдера------*/
+
+.foto .bx-wrapper {
+	max-width: 87%!important;
+	margin: 0px auto;
+}
+
+
+.bx-wrapper .bx-controls-direction a {
+	margin-top: -32px;
+	height: 54px;
+	width: 54px;
+	z-index: 9;
+}
+
+.bx-wrapper .bx-prev {
+	left: -7.5%;
+	background: url(../images/arrowLeft.png) no-repeat;
+}
+
+.bx-wrapper .bx-next {
+	right: -7%;
+	background: url(../images/arrowRight.png) no-repeat;
+}
+
+.bx-wrapper .bx-viewport {
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	border: none;
+	left: 0; 
+	background: none;
+	height: 0;
+	height: 100%;
+}
+
+.bx-viewport .slider1 .slide,
+.bx-viewport .slider1 .bx-clone {
+	width: auto!important;
+	margin-right: 25px!important;
+}
+
+.bx-wrapper .bx-next:hover {
+	background-position:0 0;
+}
+
+/*-----/нейтрализация плагина бхслайдера-----*/
+
+/*----------/КАРУСЕЛЬ С ФОТО----------*/
+
+/*========/УВЛЕКАТЕЛЬНОЕ МЕТРО=========*/
+
+
+
+/*==========ПРЕИМУЩЕСТВА==========*/
+
+.dark-grey {
+	background-color: #252525;
+	padding: 77px 0 51px;
+	color: #fff;
+}
+
+.relative {
+	position: relative;
+	text-align: right;
+	padding-right: 92px;
+	font-size: 17px;
+	font-style: normal;
+	width: 46%;
+	vertical-align: top;
+	margin: 0  3.8% 36px 0;
+	float: left;
+	display: inline-block;
+}
+
+.relative img {
+	position: absolute;
+	top: 6px;
+	right: 0px;
+}
+
+.prefs li:nth-child(3) img {
+	top: 9px;
+	right: -14px;
+}
+
+.prefs li:nth-child(2n) { 
+	text-align: left;
+	padding-left: 92px;
+	padding-right: 0;
+	margin-left: 2.5%;
+	margin-right: 0;
+}
+
+.prefs li:nth-child(2n) img {
+	position: absolute;
+	top: 10px;
+	left: 0;
+}
+/*--------текст--------*/
+.relative h3 {
+	color: #feb000;
+	font-size: 30px;
+	font-weight: 100;
+	margin-bottom: 14px;
+}
+
+.relative p {
+	font-size: 18px;
+	line-height: 24px;
+}
+
+/*==========/ПРЕИМУЩЕСТВА==========*/
+
+
+/*=======ОТЗЫВЫ=======*/
+#feedback { 
+	text-align: center;
+	padding: 27px 0 41px;
+} 
+
+#feedback h1 {
+	color: #feb000;
+	font-size: 36px;
+	margin-bottom: 17px;
+}
+
+#feedback span {
+	font-size: 154px;
+	font-style: normal;
+	color: #feb000;
+	position: absolute;
+}
+
+#feedback blockquote {
+	position: relative;
+	width: 87%;
+	margin: 0 auto;
+	padding: 0 8%;
+}
+
+.left-quotes {
+	top: 0;
+	left: 0;
+	line-height: 129px;
+}
+
+.right-quotes {
+	bottom: 0;
+	right: 0;
+	line-height: 32px;
+}
+
+ #feedback blockquote p {
+	font-size: 20px;
+
+	line-height: 30px;
+	margin: 0 auto;
+}
+
+ #feedback blockquote .autor {
+	font-weight: bold;
+	color: #feb000;
+	font-size: 24px;
+	margin-top: 10px;
+}
+
+/*------нейтрализация плагина бхслайдера------*/
+
+.bx-wrapper .bx-pager.bx-default-pager a {
+	background: #000;
+	width: 12px;
+	height: 12px;
+	border-radius: 7px;
+	margin: 0 7px;
+	-webkit-transition: all 0.6s ease;
+	-o-transition: all 0.6s ease;
+	transition: all 0.6s ease;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a:hover,
+.bx-wrapper .bx-pager.bx-default-pager a.active {
+	background: #feb000;
+}
+
+.bx-wrapper .bx-pager {
+	bottom: -45px;
+}
+
+/*------/нейтрализация плагина бхслайдера------*/
+
+/*=======/ОТЗЫВЫ=======*/
+
+
+
+/*=========ВОПРОС-ОТВЕТ========*/
+
+#sign-up {
+	min-height: 500px;
+	position: relative;
+	padding: 82px 0;
+	text-align: center;
+	background: url(../images/bg_second.jpg) no-repeat top center;
+	-webkit-background-size: cover;
+	background-color: #000;
+}
+
+#sign-up h2 {
+	color: #feb000;
+	font-weight: 100;
+	font-size: 45px;
+	margin-bottom: 30px;
+}
+#sign-up .three-fifth p {
+	font-weight: bold;
+	font-size: 24px;
+	margin-bottom: 22px;
+}
+
+#sign-up .three-fifth {
+	text-align:left; 
+}
+
+/*-----стилизуем вопросы-ответы-------*/
+.hide {
+	display: none;
+}
+
+dt span {
+	border-bottom: 1px dashed orange;
+	cursor: pointer;
+	font-size: 24px;
+}
+
+dt {
+	margin-bottom: 14px;
+}
+
+dd {
+	cursor: pointer;
+	margin-bottom: 26px;
+	font-size: 24px;
+}
+/*-----/вопросы-ответы-------*/
+
+/*-----стилизуем форму-------*/
+
+#sign-up .two-fifth {
+	width: 32%;
+}
+
+legend {
+	color: #FEB000;
+	font-weight: bold;
+	font-size: 26px;
+	text-align: center;
+	margin: -10px;
+	margin-bottom: 14px;
+	padding-left: 10px;
+}
+
+#sign-up form fieldset p {
+	font-size: 18px;
+	color: #474747;
+	font-weight: 100;
+	line-height: 20px;
+	margin-bottom: 13px;
+}
+
+#sign-up form fieldset .text {
+	margin-bottom: 22px;
+	line-height: 18px;
+}
+
+fieldset {
+	border: 0;
+	padding: 0;
+}
+
+form {
+	border-radius: 10px;
+	background-color: #f1f2f6;
+	margin-top: 3px;
+	padding: 21px 29px 29px;
+	text-align: left;
+}
+
+form input[type="text"] {
+	background-color: #cdcdd0;
+	border: none;
+	border-radius: 4px;
+	width: 100%;
+	height: 39px;
+	margin-top: 6px;
+	padding: 0 10px;
+}
+
+
+input[type="text"]:focus,
+input[type="text"]:hover {
+	outline: none;
+	border: 1px solid #feb000;
+}
+
+fieldset .button {
+	width: 100%;
+	border: 0;
+	border-radius: 4px;
+	margin-top: 15px;
+	text-align: center;
+	font-size: 19px;
+	padding: 8px 0;
+}
+
+label {
+	width: 100%;
+	margin-top: 7px;
+}
+
+fieldset p .promo {
+	width: 35%;
+	margin-right: 4%;
+}
+
+fieldset .use_promo {
+	color: #137dc1;
+	font-size: 18px;
+	border: none;
+	border-bottom: 1px dashed #137dc1;
+	background-color: #f1f2f6;
+}
+
+fieldset .use_promo:focus {
+	outline: none;
+	color: #1906B9;
+	border-color: #1906B9;
+}
+
+
+/*=======ПОДВАЛЬЧЕК=======*/
+
+footer {
+	text-align: center;
+	background-color: #feb000;
+	padding: 40px 0;
+	font-size: 0;
+}
+
+.social-icon {
+	margin-bottom: 14px;
+}
+
+.social-icon span {
+	font-family: "pictonic";
+	color: #feb000;
+	font-size: 30px;
+	padding: 10px;
+	background-color: #fff;
+	-webkit-transition: all 0.4s ease;
+	-o-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+}
+
+.logo-footer {
+	font-family: 'PT Sans';
+	color: #0f1521;
+	font-size: 24px;
+	text-decoration: none;
+}
+
+
+.dig {
+	color: #fff;
+}
+
+.year {
+	font-size: 14px;
+}
+
+.hide-states{
+	display: none;
+}

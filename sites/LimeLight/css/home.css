@@ -1,0 +1,176 @@
+#point a img {
+	display: inline;
+}
+
+#title_block img {
+	float: left;
+	display: inline-block;
+}
+
+.text_green_side {
+	display: inline-block;
+	margin: 0px 0px 30px 15px;
+}
+
+.text_green_side h4{
+	line-height: 33px;
+}
+
+#grey_block {
+	padding-bottom: 60px;
+	padding-top: 60px;
+
+}
+
+#grey_block_left {
+	float: left;
+	width: 407px;
+	margin-right: 150px;
+}
+
+#grey_block_left p {
+	margin-top: 28px;
+	line-height: 42px;
+	color: #CCC;
+}
+
+#grey_block_left h4 {
+	margin-top: 15px;
+	line-height: 28px;
+	color: #CCC;
+}
+
+#grey_block_left h3 {
+	line-height: 43px;
+}
+
+
+.bit_quotes {
+	text-align: center;
+}
+
+.quotes {
+	float: left;
+	display: inline-block;
+	/*vertical-align: top;*/
+}
+
+.quotes:last-child {
+	float: right;
+	display: inline-block;
+	/*vertical-align: top;*/
+}
+
+
+#img_more_fr {
+	text-align: center;
+}
+
+/*#title_block h4 { */
+	/*leave from BLOG*/
+	/*display: inline-block;*/
+	/*vertical-align: top; */
+	/*идет на пару с инлайн-блок*/
+	/*line-height: 5px;*/
+/*}
+#title_block p {
+	width: 300px;
+}*/
+
+
+
+
+.little_width  .blog_block {
+	border-bottom:none;
+}
+/*#title_block p {
+	float: left;
+}*/
+
+
+
+h4 {
+	font-family: "roboto-slab-bold-webfont";
+}
+
+#txtEmail {
+	width: 251px;
+	height: 39px;
+	margin-right: 7px;	
+}
+
+.green_button {
+	width: 107px;
+	height: 39px;
+}
+
+.MF_button {
+	text-align: center;
+	width: 201px;
+	height: 42px;
+}
+
+#button_holder {
+	text-align: center;
+}
+
+#grey_block_left input[type="text"] {
+	padding: 0 5px 0 5px;
+}
+
+
+
+
+.between_quotes {
+	padding: 0 70px 0 70px;
+	display: inline-block;
+	/*vertical-align: top;*/
+	position: relative;
+	list-style: none;
+	height: 40px;
+	padding: 0;
+	margin: 0;
+}
+
+.between_quotes li {
+	-webkit-backface-visibility: hidden;
+	position: absolute;
+	/*display: none;*/
+	width: 100%;
+	left: 0;
+	top: 0;
+}
+
+.between_quotesli:first-child, {
+	position: relative;
+	display: block;
+	float: left;
+}
+
+/*.between_quotes img {
+  display: block;
+  height: auto;
+  float: left;
+  width: 100%;
+  border: 0;
+  }*/
+
+.validation_email {
+	display: inline-block;
+	position: relative;
+	/*overflow: hidden;*/
+	padding: 0;
+	margin: 0;
+	width: 100%
+}
+
+
+.ok, .empty, .nope {
+	-webkit-backface-visibility: hidden;
+	position: absolute;
+	display: none;
+}
+/*	width: 100%;
+	left: 0;
+	top: 0;
+}*/

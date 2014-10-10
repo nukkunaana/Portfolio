@@ -1,0 +1,66 @@
+
+/*для js из freebies.css*/
+.body_img {
+	display: none;
+	overflow: hidden;
+}
+
+
+.blog_block {
+	overflow: hidden;
+	border-bottom: 1px solid #f7f7f7; /*размер_типбордера_цвет*/
+	width: 940px;
+	margin: 0 auto;
+	padding: 50px 0;
+}
+
+#blog_block_last {
+	border-bottom: none;
+}
+
+.blog_block img {
+	float:left;
+}
+
+.blog_block_imgLeft {
+	width: 250px;
+	height: 181px; 
+}
+
+.blog_block_right {
+	width: 650px;
+	float:right;
+	margin-left: 40px;
+}
+
+.blog_block_right_with_point {
+	overflow: hidden;  /*div - сам по себе блок и заполняет всю предоставленную ширину, но если внутри есть элементы с флоатами, то он "забывает" занимать всю ширину. поэтому оверфлоатом напоминает ему заполнить всю ширину*/
+}
+
+.blog_block_right > p {   /*> - селектор, выбор сынов, а не внуков*/
+	margin:20px auto;
+}
+
+.blog_block_right_with_point p {
+	float: left;
+}
+
+.blog_block_right_with_point img {
+	padding: 7px 4px;
+	margin: 0 10px;
+}
+
+#blog_block_right_arrov img {
+	margin-right: 6px;
+
+}
+
+#blog_block_right_arrov p {
+	line-height: 22px;   /*для текста надо указать линию строки, а то будет упираться в потолок блока*/
+}
+
+.blog_block a {
+	text-decoration: none;
+	color: black;
+	line-height: 22px;
+}

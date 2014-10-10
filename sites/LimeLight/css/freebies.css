@@ -1,0 +1,91 @@
+/*#grey_block a:first-child {
+color: #86C840;
+}*/
+.body_img {
+	display: none;
+}
+
+.line_bit {
+	margin-right: 10px;
+	display:inline-block;
+	width: 300px;
+/*	float: left;*/
+	margin-bottom: 40px;
+	cursor: pointer;   /*меняет курсор!!!!!!!!*/
+}
+
+.line_ {
+	margin-right: 10px;
+	display:inline-block;
+	width: 300px;
+/*	float: left;*/
+	margin-bottom: 40px;
+	cursor: pointer; 
+}
+
+.imgHover {
+	position: relative;
+}
+
+.hhh {
+    display: none;
+    position: absolute;
+    z-index: 2;
+   	width: 286px;
+	height: 40px;
+	background-color: rgba(37, 37, 37, 0.8);
+	color: white;
+	padding: 8px 15px;
+	bottom: 10px;
+	left: 5px;
+}
+
+.hhh p {
+	display: inline-block;
+}
+
+.hhh p:first-child {
+	margin-right: 44px; 
+}
+
+.ph img {
+	margin-bottom: -2px;
+}
+
+.ph {
+	margin-right: 7px; 
+	display: inline-block;
+	
+}
+
+
+.iii {
+	/*z-index: 1;*/
+}
+.hhh:hover {
+   display:inline-block;
+}
+
+
+.line_bit:last-child {
+	margin-right: 0;
+}
+
+.line_bit_bottom {
+	width: 265px;
+	margin: 12px auto;
+}
+
+.line_bit_text {
+	position: relative;
+	display: inline-block;
+	width: 220px;
+}
+
+/*.line_bit img:last-child {
+	display: inline-block;
+	vertical-align: top;
+	float: right;
+}*/
+
+

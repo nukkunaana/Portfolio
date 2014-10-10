@@ -1,0 +1,52 @@
+#img_about_center {
+/*	height: 250px;*/
+	border-bottom: solid;
+	border-color: #D8D8D8;
+	border-width: 1px;
+	text-align: center;
+	overflow: hidden;
+	padding-bottom: 40px;
+}
+
+.img_about_1 {
+    width: 300px;
+    padding: 15px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+#img_about_center img {
+	width: 100px;
+	height: 100px;
+}
+
+.img_about {
+    width: 300px;
+    padding: 15px;
+    border-left-style: dotted;
+    border-left-color: #D8D8D8;
+    border-left-width: 3px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.team {
+	text-align: center;
+	height: 480px;
+	margin: 0 auto;
+}
+
+.member {
+	text-align: center;
+    width: 300px;
+    display: inline-block;
+    vertical-align: top;
+    padding: 32.5px;
+}
+
+.member img {
+	width: 240px;
+	height: 240px;
+	border-radius: 200px;
+	border: 5px solid #EEE;
+}

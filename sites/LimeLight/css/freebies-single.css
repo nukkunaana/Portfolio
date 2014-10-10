@@ -1,0 +1,79 @@
+/*#grey_block a:last-child {
+	color: #86C840;
+}*/
+#select_category a {
+	opacity: 0.5;
+	cursor: default;
+}
+
+#free_icon_block {
+	border-bottom: 1px solid #f7f7f7; 
+	overflow: hidden;
+}
+
+#free_icon_block_left {
+	width: 617px;	
+	float: left;
+}
+
+#free_icon_block_left img:first-child {
+	border-radius: 3px;
+	border:2px solid #eeeeee;
+	width: 621px;
+	height: 254px;
+}
+
+.little_img {
+	margin: 19px 12px 30px 0;
+	width: 116px;
+	height: 116px;
+}
+
+#free_icon_block_right {
+	width: 300px;	
+	float: right;
+}
+
+.file_details {
+	position: absolute;
+	width: 300px;
+	height: 356px;
+	background-color: #f7f7f7;
+	border: 1px solid #e5e5e5;
+}
+
+.file_details_img_bottom {
+	position: relative;
+	bottom: -4px;
+}
+
+/*.file_details_top div,*/ .file_details_top p {
+	display: inline-block;
+}
+
+.file_details_top {
+	padding-top: 14px;
+}
+
+.file_details_top img {
+	margin-right: 7px;
+}
+
+.file_details_top div {
+	height: 20px;
+	margin: 2px 0px 19px 30px;
+}
+
+.file_details_top_div {
+	margin: 2px 0px 20px 30px;
+}
+
+.download_button {
+	width: 300px;
+	height: 65px;
+	font-size: 20px;
+	margin-bottom: 25px;
+}
+
+
+

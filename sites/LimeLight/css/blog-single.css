@@ -1,0 +1,55 @@
+.block_with_point {
+	text-align: center;
+/*	display: inline;*/
+}
+.block_with_point p{
+	display: inline;
+}
+.block_with_point img {
+	padding: 4px 4px;
+	margin: 0 10px;
+}
+
+#text img {
+	margin: 40px auto;
+}
+
+
+/*спросить у Федора*/
+/*.text_img {
+	width: 941px;
+	height: 343px;
+}*/
+
+#text h3 {
+	text-align:left;
+	margin-bottom: 20px;
+}
+
+#text img:last-child {
+	text-align: center;
+	padding-top: 20px;
+}
+
+#text {
+	border-bottom: 1px solid #f7f7f7;
+}
+
+.comment_2 {
+	float:right;
+/*	width: 840px;
+	overflow: hidden;
+	display: inline-block*/
+	margin-bottom: 40px;
+}
+
+.comment_2 img {
+	float:left;
+	margin-right: 30px;
+}
+
+.comment_body_2 { 
+	width: 740px;
+	float:left;
+	display: inline;
+}

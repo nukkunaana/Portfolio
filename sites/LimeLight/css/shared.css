@@ -1,0 +1,550 @@
+/*стили для хедера и футеров.*/
+@font-face {
+    font-family: 'proximanova-bold-webfont';
+    src: url('../Fonts/proximanova-bold-webfont.eot');
+    src: url('../Fonts/proximanova-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../Fonts/proximanova-bold-webfont.woff') format('woff'),
+         url('../Fonts/proximanova-bold-webfont.ttf') format('truetype'),
+         url('../Fonts/proximanova-bold-webfont.svg#proximanova-bold-webfon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'proximanova-reg-webfont';
+    src: url('../Fonts/proximanova-reg-webfont.eot');
+    src: url('../Fonts/proximanova-reg-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../Fonts/proximanova-reg-webfont.woff') format('woff'),
+         url('../Fonts/proximanova-reg-webfont.ttf') format('truetype'),
+         url('../Fonts/proximanova-reg-webfont.svg#proximanova-reg-webfont') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'roboto-slab-bold-webfont';
+    src: url('../Fonts/roboto-slab.bold-webfont.eot');
+    src: url('../Fonts/roboto-slab.bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../Fonts/roboto-slab.bold-webfont.woff') format('woff'),
+         url('../Fonts/roboto-slab.bold-webfont.ttf') format('truetype'),
+         url('../Fonts/roboto-slab.bold-webfont.svg#roboto-slab.bold-webfont') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0){
+    @font-face{font-family:"proximanova-reg-webfont";
+    src:url(../Fonts/proximanova-bold-webfont.svg#proximanova-bold-webfont) format("svg")}
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0){
+    @font-face{font-family:"proximanova-reg-webfont";
+    src:url(../Fonts/proximanova-reg-webfont.svg#proximanova-reg-webfont) format("svg")}
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0){
+    @font-face{font-family:"roboto-slab-bold-webfont";
+    src:url(../Fonts/roboto-slab.bold-webfont.svg#roboto-slab.bold-webfont) format("svg")}
+}
+
+
+/*Стили текста (размер, шрифт, цвет)*/
+header, #select_category, .line_bit_text h2,
+.Title_36,
+.blog_block_right h4, h1,
+#comments h3, .Leave_a_comment h3, 
+#comments h4 {
+	font-size: 16px;
+	font-family: "roboto-slab-bold-webfont";
+}
+
+.Title_36 {
+	font-size: 36px;
+}
+
+/*стили шрифтов блок*/
+.blog_block_right h4, h1 {
+	font-size: 28px;
+}
+
+/*стили шрифта комментов*/
+#comments h3, .Leave_a_comment h3 {
+	font-size: 30px;
+}
+
+#comments h4 {
+	font-size: 24px;
+}
+
+/*конец блоку посвященному комментов*/
+
+.member h4,
+#img_about_center h2,
+.member h6, #comments h2, .text_green_side p,
+.under, .blog_block_right_with_point, .line_bit_text p,
+.blog_icon_single {
+	font-size: 18px;
+	font-family: "proximanova-bold-webfont";
+}
+
+#img_about_center h2, {
+	font-size: 20px;
+	margin-bottom: 30px;
+}
+
+.member h6, #comments h2, .text_green_side p {
+	font-size: 16px;
+	color: #777777;
+}
+
+.under, .blog_block_right_with_point, .line_bit_text p {
+	font-size: 14px;
+	color: #cccccc;
+}
+
+.blog_icon_single {
+	font-size: 28px;
+}
+
+.txt, .footer_block_right p, .footer_block_left p, #btnValidate, .MF_button {
+	font-size: 16px;
+	font-family: "proximanova-reg-webfont";
+}
+
+/*стили шрифта футера*/
+#footer_block h3, .file_details_top h4 {
+	font-size: 18px;
+	font-family: "roboto-slab-bold-webfont";
+}
+
+ .footer_block_right h5, #blog_block_right_arrov, #grey_block_left h4{
+	font-size: 16px;
+	font-family: "proximanova-bold-webfont";
+}
+
+.footer_block_right p:last-child {
+	margin-top: 0px;
+}
+
+.hhh {
+	color: white;
+}
+
+.footer_block_right p:last-child, .hhh, 
+.footer_block_left input,
+ #footer_bottom a, #footer_bottom,
+.between_quotes {
+	font-size: 12px;
+	font-family: "proximanova-reg-webfont";
+}
+
+.footer_block_left input, {
+	font-size: 14px;
+}
+
+#footer_bottom a, #footer_bottom {
+	font-size: 14px;
+	color: #828282;
+}
+
+.between_quotes {
+	font-size: 28px;
+}
+
+
+
+/*Общаг для всех!!!*/
+#center_elements { /*переехал из эбаут*/
+	text-align: center;
+	margin: 55px auto;
+}
+
+ #text p { /*переехал из эбаут*/
+	text-align: justify;
+	margin-bottom: 20px;
+}  /*потом оптимизировать эти 2 строчки*/
+
+#title_block p { /*leave from BLOG*/
+	display: inline-block;
+	vertical-align: top; /*идет на пару с инлайн-блок*/
+	line-height: 35px;
+}
+
+/*о комментах* leave from BLOG*/
+.comment_body { 
+	width: 840px;
+	float:left;
+	display: inline;
+}
+/*о комментах* leave from HOME*/
+
+.img {
+	border-radius: 7px;
+	border:5px solid #eeeeee;
+	width: 296px;
+	height: 220px;
+}
+
+.iii {
+	border-radius: 7px;
+	border:5px solid #eeeeee;
+	width: 296px;
+	height: 220px;
+}
+
+.green_button {
+	border-radius: 2px;
+	background-color: #86c840;
+	color: #ffffff;
+	border: none;
+	-moz-transition: background-color 0.8s 0.1s ease;
+	-o-transition: background-color 0.8s 0.1s ease;
+	-webkit-transition: background-color 0.8s 0.1s ease;
+}
+
+.green_button:hover {
+    background: #97dd4d; /* Цвет фона под ссылкой */ 
+} 
+
+.letsshop_button {
+	width: 142px;
+	height: 29px;
+	font-size: 13px;
+}
+
+/*#comments {
+	overflow: hidden;
+}*/
+#comments h3 {
+	margin: 10px auto 30px;
+}
+
+.comment {
+	overflow: hidden;
+	display: inline-block;
+	margin-bottom: 40px;
+}
+
+/*.comment img*/ .comment_imgMember {
+	float:left;
+	margin-right: 30px;
+	width: 70px;
+	height: 70px;
+	border-radius: 40px;
+	border: 2px solid #EEE;
+}
+
+.comment_body img, .comment_body_2 img {
+	float:left;
+	margin:4px 5px 0px 0px;
+	width: 16px;
+	height: 12px;
+	border: none;
+}
+
+.Leave_a_comment p{
+	margin: 10px auto;
+	display: block;
+}
+
+.Leave_a_comment h3 {
+	margin: 10px auto 30px; /*моэжет как-то с оптимизировать со всеми h3*/
+}
+
+.little_width {
+	width: 940px;
+	margin: 0px auto;
+}
+
+.align_center {
+	margin: 35px auto; /*надо переименовать так как тут всего навсего добавление отступа с верху*/
+}
+
+#grey_block {
+	background: #f7f7f7;
+	overflow: hidden;
+	margin: 30px 0 67px;
+}
+
+nav {
+	float: right;
+	line-height: 36px; 
+    font-size: 17px;
+}
+
+#grey_block nav {
+	width: 940px;
+	margin: 0 auto;
+	color: black;
+	float: none;
+}
+
+#grey_block a {
+	text-decoration: none;
+	padding-right: 28px;
+	color: #9C9C9C;
+}
+
+#number_bottom {
+	padding-bottom: 30px;
+	text-align: center;
+}
+
+/*//тут надо поставить всем сайз заглавий*/
+.title {
+	margin-bottom: 20px;
+
+}
+
+.heading_text {
+
+}
+
+.heading_comment {
+
+}
+
+/*стили рамок, и внутренностей рамок комментариев*/
+textarea, input {
+	border: 1px solid #E0E0E0;
+	border-radius: 2px;
+}
+
+.Leave_a_comment input[type="text"] {
+	padding: 0 5px 0 5px;
+	width: 283px;
+	height: 36px;
+}
+
+#txtComment {
+	padding: 7px 5px 0 5px;
+	width: 637px;
+	height: 165px;
+}
+
+/*стили для хедера*/
+
+header {
+	height: 80px;
+}
+
+#logo {
+	float: left;
+}
+
+#header_links a {
+	text-decoration: none;
+	color: black;
+	padding: 0 14px;
+}
+
+#header_links a:last-child {
+	padding-right: 0px;
+}
+
+#point {
+	display: inline-block;
+}
+
+#point img {
+	display: block;
+	margin: -9px auto 0;
+}
+
+/*Стили для футера с черным фоном*/
+#block-bottom {
+	margin: 40px auto;
+	background: #2D2E2F;
+}
+
+#footer_block {
+	margin: 35px auto;
+	padding: 40px 0 ;  /*что-то ужастное*/
+	color: #C5C5C5;
+	overflow: hidden;
+}
+
+.footer_block_left {
+	width: 50%;
+	padding: 10px 0;
+	float:left;
+}
+
+#rectangle {
+	width: 140px;
+	float: left;
+	margin-right: 30px;
+	width: 140px;
+	height: 140px;
+}
+
+.footer_block_left p {
+	width: 300px;
+	float: left;
+	height: 115px;
+}
+
+.footer_block_right {
+	width: 50%;
+	padding: 10px;
+	float:left;
+}
+
+#twitter_ikon {
+	width: 17px;
+	float: left;
+	margin: 5px 8px 49px 0;
+
+}
+
+.footer_block_right_bit p {
+	margin-top: 17px;
+}
+
+/*Стили для самого нижнего футера*/
+
+#footer_bottom nav {
+	float: left;
+	line-height: 46px; 
+	font-size: 17px;
+	margin-bottom: 50px;
+	overflow: hidden;
+}
+
+#footer_bottom a {
+	text-decoration: none;
+	padding-right: 28px;
+}
+
+#footer_bottom a:last-child{
+	padding-right: 0;
+}
+
+#footer_bottom p {
+	float: right;
+	line-height: 46px;
+}
+
+#footer_bottom img {
+	margin: 0 auto; 
+	line-height: 51px;
+	display: block;
+}
+
+
+
+.hidden {
+	display: none;
+}
+
+#select_category .green_font {
+	color: #86C840;
+}
+
+.opacity {
+	opacity: 0.5;
+}
+
+.default_cursor a{
+	cursor: default;
+}
+
+.display {
+	display: inline-block;
+}
+
+
+/*для  комментов */
+.input {
+	width: 637px;
+	overflow: hidden;
+	margin-bottom: 60px;
+}
+/*КНОПКИ ДЛЯ СИНГЛ_БЛОК_ФРИИБИС скачала от сюда http://somadesign.ca/demos/buttons-redux.html*/
+.button/*, input[type=button], input[type=submit], button*/ {
+	text-decoration: none;
+	border-color:#888;
+	border-color:rgba(0, 0, 0, 0.56);
+	cursor: pointer;
+	outline: none;
+	color:#111;
+	font-family:"Lucida Grande","Lucida Sans","Lucida Sans Unicode","Segoe UI",Verdana,sans-serif;
+	display:inline-block;
+	vertical-align:top;
+	position:relative;
+	font-size:12px;
+	font-weight:bold;
+	text-align:center;
+	background-color:#aaa;
+	background-image:url(gradient.png);
+	background-image: -moz-linear-gradient(top, rgba(255,255,255,.75), rgba(255,255,255,0));
+	background-image: -o-linear-gradient(top, rgba(255,255,255,.75), rgba(255,255,255,0));
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(255,255,255,.75)), to(rgba(255,255,255,0)));
+	background-image: linear-gradient(top, rgba(255,255,255,.75), rgba(255,255,255,0));
+	background-repeat:repeat-x;
+	text-shadow:1px 1px 0 rgba(255,255,255,.67);
+	line-height:2;
+	margin:0 0 2em 1em;
+	padding:0 1em;
+	height:2em;
+	-moz-box-shadow:1px 1px 0 rgba(255,255,255,.5) inset, -1px -1px 0 rgba(255,255,255,.5) inset;
+	-webkit-box-shadow:1px 1px 0 rgba(255,255,255,.5) inset, -1px -1px 0 rgba(255,255,255,.5) inset;
+	box-shadow:1px 1px 0 rgba(255,255,255,.5) inset, -1px -1px 0 rgba(255,255,255,.5) inset;
+	-webkit-transition: all .185s linear;
+	-moz-transition: all .185s linear;
+	-o-transition: all .185s linear;
+	transition: all .185s linear;
+	/** Make the text unselectable **/
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	/*добавила:*/
+	float: right;
+}
+/*.button,*/ .button:after/*, button, button:after, input[type=submit], input[type=button] */{
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+	border-width:1px;
+	border-style:solid;
+
+}
+.button:after /*,button:after*/{
+	display:block;
+	position:absolute;
+	content:' ';
+	width:100%;
+	height:100%;
+	border-color: transparent transparent #ccc;
+	border-color: transparent transparent rgba(255, 255, 255, 0.67);
+	bottom:-2px;
+	left:-1px;
+}
+.button:hover, .button:focus/* , button:hover, button:focus, input[type=button]:hover, input[type=button]:focus, input[type=submit]:hover, input[type=submit]:focus*/ {
+	background-color:#a8c0cb;
+}
+.button:active /*, button:active, input[type=submit]:active, input[type=button]:active*/ {
+	line-height:2.2;
+	-moz-box-shadow
+		:0 .33em 1em rgba(0,0,0,.67) inset,
+		1px 1px 0 rgba(255,255,255,.25) inset, 
+		-1px -1px 0 rgba(255,255,255,.25) inset;
+	-webkit-box-shadow:
+		0 .33em 2em rgba(0,0,0,.67) inset,
+		1px 1px 0 rgba(255,255,255,.25) inset, 
+		-1px -1px 0 rgba(255,255,255,.25) inset;
+	box-shadow:
+		0 .33em 2em rgba(0,0,0,.67) inset,
+		1px 1px 0 rgba(255,255,255,.25) inset, 
+		-1px -1px 0 rgba(255,255,255,.25) inset;
+		-webkit-transition: line-height .1s linear;
+		-moz-transition: all .1s linear;
+		-o-transition: all .1s linear;
+		transition: all .1s linear;
+}
+.button.bg, .button.bg:hover, .button.bg:focus {
+	background-image: -moz-linear-gradient(top, rgba(255,255,255,.75), rgba(255,255,255,0));
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(255,255,255,.75)), to(rgba(255,255,255,0)));
+}
